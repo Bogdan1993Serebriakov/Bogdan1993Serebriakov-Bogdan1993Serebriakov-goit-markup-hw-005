@@ -21,11 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- 
-      =========================================
-      HEADER BLOCK 
-      =========================================
-      -->
+    <!--HEADER BLOCK-->
     <header class="header">
       <div class="header-container container">
         <a href="./index.html" class="logo-header link">
@@ -61,26 +57,24 @@
         </address>
       </div>
     </header>
-    <!--
-      ===================================================
-      END HEADER BLOCK
-      ===================================================
-    -->
-    <!-- 
-      ==================================================
-      MAIN BLOCK 
-      ==================================================
-    -->
+    <!--END HEADER BLOCK-->
+    <!--MAIN BLOCK -->
     <main>
-      <!-- 
-        ================================================
-        HERO SECTION 
-        ================================================
-        -->
+      <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn btn">Order Service</button>
+        </div>
+        <!-- modal window -->
+        <div class="backdrop visually-hidden">
+          <div class="modal">
+            <button class="modal-btn">
+              <svg class="modal-icons" width="8px" height="8px">
+                <use href="./icons.svg#icon-close-cross"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--END HERO SECTION------------------------------------------------------------>
@@ -568,8 +562,7 @@
         </button>
       </div>
     </div>
-    <!-- 
-          ======================================================================
-         -->
+
+    <script src="./js/header.js"></script>
   </body>
 </html>
