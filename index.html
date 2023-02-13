@@ -64,16 +64,17 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn">Order Service</button>
+          <button data-modal-open type="button" class="hero-btn btn">Order Service</button>
         </div>
         <!-- modal window -->
-        <div class="backdrop visually-hidden">
+        <div is-hidden class="backdrop visually-hidden">
           <div class="modal">
-            <button class="modal-btn">
+            <button data-modal-close class="modal-btn">
               <svg class="modal-icons" width="8px" height="8px">
                 <use href="./icons.svg#icon-close-cross"></use>
               </svg>
             </button>
+            </div>
           </div>
         </div>
       </section>
@@ -553,7 +554,7 @@
   MODAL WINDOW FOR HERO SECTION
   ==============================================================================
   -->
-    <div class="backdrop visually-hidden">
+    <!-- <div class="backdrop visually-hidden">
       <div class="modal">
         <button class="modal-btn">
           <svg class="modal-icons" width="8px" height="8px">
@@ -561,7 +562,7 @@
           </svg>
         </button>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/header.js"></script>
   </body>

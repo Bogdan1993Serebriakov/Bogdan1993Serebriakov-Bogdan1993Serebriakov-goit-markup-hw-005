@@ -11,6 +11,10 @@
   --light-slate: #8e8f99;
   --cloud: #f4f4fd;
   --black: black;
+
+  /* animation */
+  --main-tr-dur: 250ms;
+  --main-tr-t-f: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -211,6 +215,8 @@ HEADER BLOCK (FOR ALL PAGES)
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 .address-link:hover,
 .address-link:focus {
@@ -265,6 +271,8 @@ HEADER BLOCK (FOR ALL PAGES)
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   fill: var(--cloud);
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 .sm-footer-link:hover,
 .sm-footer-link:focus {
@@ -312,6 +320,8 @@ HEADER BLOCK (FOR ALL PAGES)
   border-radius: 4px;
   padding: 16px 32px;
   margin-top: 48px;
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -428,6 +438,8 @@ HEADER BLOCK (FOR ALL PAGES)
   background-color: var(--iris);
   border-radius: 50%;
   fill: var(--cloud);
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 .sm-link:hover,
 .sm-link:focus {
@@ -459,6 +471,8 @@ HEADER BLOCK (FOR ALL PAGES)
 }
 .customers-icons {
   fill: var(--light-slate);
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 
 .customers-link:hover .customers-icons {
@@ -491,6 +505,8 @@ HEADER BLOCK (FOR ALL PAGES)
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   padding: 12px 24px;
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -514,7 +530,10 @@ HEADER BLOCK (FOR ALL PAGES)
 .portfolio-item {
   width: 360px;
 }
-
+.portfolio-link {
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f     );
+}
 .portfolio-link:hover,
 .portfolio-link:focus {
   display: block;
@@ -570,12 +589,6 @@ MODAL WINDOW FOR HERO SECTION
 
   background: var(--cornflowerc);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%; 
+  border-radius: 50%;
   fill: var(--black);
 }
-.modal-icons {
-}
-
-/* 
-================================================================
- */
