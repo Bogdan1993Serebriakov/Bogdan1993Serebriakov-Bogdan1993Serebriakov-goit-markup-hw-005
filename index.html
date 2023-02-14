@@ -64,18 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button data-modal-open type="button" class="hero-btn btn">Order Service</button>
-        </div>
-        <!-- modal window -->
-        <div is-hidden class="backdrop visually-hidden">
-          <div class="modal">
-            <button data-modal-close class="modal-btn">
-              <svg class="modal-icons" width="8px" height="8px">
-                <use href="./icons.svg#icon-close-cross"></use>
-              </svg>
-            </button>
-            </div>
-          </div>
+          <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!--END HERO SECTION------------------------------------------------------------>
@@ -544,26 +533,19 @@
         </div>
       </div>
     </footer>
-    <!--
-  ==============================================================================
-  END FOOTER BLOCK
-  =============================================================================
-  -->
-    <!-- 
-  ===============================================================================
-  MODAL WINDOW FOR HERO SECTION
-  ==============================================================================
-  -->
-    <!-- <div class="backdrop visually-hidden">
+    <!--END FOOTER BLOCK------------------------------------------------------------------->
+    <!--MODAL WINDOW FOR HERO SECTION------------------------------------------------>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icons" width="8px" height="8px">
             <use href="./icons.svg#icon-close-cross"></use>
           </svg>
         </button>
       </div>
-    </div> -->
+    </div>
+    <!-- ------------------------------------------------------------------------->
 
-    <script src="./js/header.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

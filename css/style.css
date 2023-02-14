@@ -12,9 +12,27 @@
   --cloud: #f4f4fd;
   --black: black;
 
-  /* animation */
+  /* transition */
   --main-tr-dur: 250ms;
   --main-tr-t-f: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* animation */
+@keyframes move-top {
+  0% {
+    transform: translateY(250px);
+    opacity: 0; /* Свойства для изменения */
+  }
+
+  /* Произвольное количество промежуточных кадров */
+
+  100% {
+    transform: translateY();
+    opacity: 1; /* Свойства для изменения */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -532,7 +550,7 @@ HEADER BLOCK (FOR ALL PAGES)
 }
 .portfolio-link {
   transition-duration: var(--main-tr-dur);
-  transition-timing-function: var(--main-tr-t-f     );
+  transition-timing-function: var(--main-tr-t-f);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -558,12 +576,19 @@ HEADER BLOCK (FOR ALL PAGES)
 MODAL WINDOW FOR HERO SECTION
 ===============================================================
 */
+
 .backdrop {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity var(--main-tr-dur) ;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
